@@ -12,7 +12,7 @@ resource "aws_resourcegroups_group" "resourcegroups_group" {
   name = "${local.namespace}-group"
 
   resource_query {
-    query = <<JSON
+    query = <<-JSON
       {
         "ResourceTypeFilters": [
           "AWS::EC2::Instance"
@@ -20,8 +20,8 @@ resource "aws_resourcegroups_group" "resourcegroups_group" {
         "TagFilters": [
           {
             "Key": "ResourceGroup",
-          #  "Values": ["${local.namespace}"]
-             "Values": ["vj-tf-action"]
+            "Values": ["${local.namespace}"]
+     
           }
         ]
       }
