@@ -20,7 +20,8 @@ resource "aws_resourcegroups_group" "resourcegroups_group" {
         "TagFilters": [
           {
             "Key": "ResourceGroup",
-            "Values": ["${local.namespace}"]
+          #  "Values": ["${local.namespace}"]
+            #  "Values": ["vj-tf-action"]
           }
         ]
       }
