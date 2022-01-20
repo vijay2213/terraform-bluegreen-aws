@@ -21,7 +21,6 @@ resource "aws_resourcegroups_group" "resourcegroups_group" {
           {
             "Key": "ResourceGroup",
             "Values": ["${local.namespace}"]
-     
           }
         ]
       }
