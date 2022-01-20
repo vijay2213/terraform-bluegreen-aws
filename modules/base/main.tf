@@ -12,7 +12,7 @@ resource "aws_resourcegroups_group" "resourcegroups_group" {
   name = "${local.namespace}-group"
 
   resource_query {
-    query = <<-JSON
+    query = <<JSON
       {
         "ResourceTypeFilters": [
           "AWS::AllSupported"
