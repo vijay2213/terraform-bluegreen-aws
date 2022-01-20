@@ -21,7 +21,7 @@ resource "aws_resourcegroups_group" "resourcegroups_group" {
           {
             "Key": "ResourceGroup",
           #  "Values": ["${local.namespace}"]
-            #  "Values": ["vj-tf-action"]
+             "Values": ["vj-tf-action"]
           }
         ]
       }
